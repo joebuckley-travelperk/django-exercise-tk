@@ -15,7 +15,7 @@ RUN mkdir /app
 
 RUN adduser -D dockuser
 RUN chown dockuser /app
-#USER dockuser
+USER dockuser
 
 WORKDIR /app
 COPY ./app /app
